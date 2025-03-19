@@ -25,3 +25,8 @@ jobs:
           poetry run ruff check
           poetry run ruff format
           poetry run mypy .
+
+    - name: Unit tests
+      run: |
+          poetry run pytest
+          
